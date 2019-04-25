@@ -16,8 +16,8 @@ class App extends Component {
 
     this.setState({ weather: response });
 
-    console.log(this.state.weather.data);
-    console.log(this.state.weather);
+    // console.log(this.state.weather.data);
+    // console.log(this.state.weather);
   };
 
   renderWeather = () => {
@@ -25,8 +25,8 @@ class App extends Component {
 
     if (data) {
       const temp = Math.floor((data.main.temp - 273) * (9 / 5) + 32);
-      console.log(data.weather[0]);
-      console.log(data.weather[0].description);
+      // console.log(data.weather[0]);
+      // console.log(data.weather[0].description);
 
       return (
         <div className="row mt-5">
